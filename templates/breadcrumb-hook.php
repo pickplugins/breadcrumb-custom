@@ -1,78 +1,8 @@
 <?php
 if ( ! defined('ABSPATH')) exit;  // if direct access
 
-//
-//add_action('post_grid_container', 'post_grid_search_form', 5);
-//
-//function post_grid_search_form($args){
-//
-//    $post_grid_settings = get_option('post_grid_settings');
-//
-//    $grid_id = $args['grid_id'];
-//    $post_grid_options = $args['options'];
-//
-//    $font_aw_version = isset($post_grid_settings['font_aw_version']) ? $post_grid_settings['font_aw_version'] : 'v_5';
-//
-//
-//    $nav_top_search = isset($post_grid_options['nav_top']['search']) ? $post_grid_options['nav_top']['search'] : 'no';
-//    $grid_type = isset($post_grid_options['grid_type']) ? $post_grid_options['grid_type'] : 'grid';
-//
-//    //if($nav_top_search !='yes') return;
-//
-//
-//    if($font_aw_version == 'v_5'){
-//        $nav_top_search_icon = '<i class="fas fa-search"></i>';
-//    }elseif($font_aw_version == 'v_4'){
-//        $nav_top_search_icon = '<i class="fa fa-search"></i>';
-//    }
-//
-//    $nav_top_search_placeholder = isset($post_grid_options['nav_top']['search_placeholder']) ? $post_grid_options['nav_top']['search_placeholder'] : __('Start typing', 'post-grid');
-//    $nav_top_search_icon = isset($post_grid_options['nav_top']['search_icon']) ? $post_grid_options['nav_top']['search_icon'] : $nav_top_search_icon;
-//
-//
-//    $keyword = isset($_GET['keyword']) ? sanitize_text_field($_GET['keyword']) : '';
-//    wp_enqueue_style('post-grid-search');
-//
-//    //echo '<pre>'.var_export($_SERVER, true).'</pre>';
-//
-//    $page_url = '';
-//
-//    ?>
-<!--    <div class="post-grid-search">-->
-<!--        <form action="#--><?php ////echo $page_url; ?><!--" method="get">-->
-<!--            --><?php
-//
-//            do_action('post_grid_search', $args);
-//
-//            ?>
-<!--            <div class="field-wrap submit">-->
-<!--                <div class="field-input">-->
-<!--                    --><?php //wp_nonce_field( 'nonce_post_grid_search' ); ?>
-<!--                    <input type="submit" class=""  placeholder="" value="Submit">-->
-<!---->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </form>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--    </div>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--    --><?php
-//
-//
-//
-//}
 
 
-
-
-
-// Process form data and post query
 
 function breadcrumb_tags_custom($tags){
 
