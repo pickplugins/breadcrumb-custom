@@ -6,16 +6,36 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 
 function breadcrumb_tags_custom($tags){
 
-    $tags['job']['front_text'] = array('name' => __('Front text','breadcrumb'));
-    $tags['job']['home'] = array('name' => __('Home','breadcrumb'));
-    $tags['job']['post_title'] = array('name' => __('Job title','breadcrumb'));
-    $tags['job']['post_author'] = array('name' => __('Job author','breadcrumb'));
-    $tags['job']['job_category'] = array('name' => __('Job category','breadcrumb'));
-    $tags['job']['job_tag'] = array('name' => __('Job tag','breadcrumb'));
-    $tags['job']['post_date'] = array('name' => __('Job date','breadcrumb'));
-    $tags['job']['post_month'] = array('name' => __('Job month','breadcrumb'));
-    $tags['job']['post_year'] = array('name' => __('Job year','breadcrumb'));
-    $tags['job']['post_id'] = array('name' => __('Job ID','breadcrumb'));
+    $tags['Job_Listing']['front_text'] = array('name' => __('Front text','breadcrumb'));
+    $tags['Job_Listing']['home'] = array('name' => __('Home','breadcrumb'));
+    $tags['Job_Listing']['post_title'] = array('name' => __('Job title','breadcrumb'));
+    $tags['Job_Listing']['post_author'] = array('name' => __('Job author','breadcrumb'));
+    $tags['Job_Listing']['job_category'] = array('name' => __('Job category','breadcrumb'));
+    $tags['Job_Listing']['job_tag'] = array('name' => __('Job tag','breadcrumb'));
+    $tags['Job_Listing']['post_date'] = array('name' => __('Job date','breadcrumb'));
+    $tags['Job_Listing']['post_month'] = array('name' => __('Job month','breadcrumb'));
+    $tags['Job_Listing']['post_year'] = array('name' => __('Job year','breadcrumb'));
+    $tags['Job_Listing']['post_id'] = array('name' => __('Job ID','breadcrumb'));
+
+
+    $tags['Post_Category']['front_text'] = array('name' => __('Front text','breadcrumb'));
+    $tags['Post_Category']['home'] = array('name' => __('Home','breadcrumb'));
+    $tags['Post_Category']['term_title'] = array('name' => __('Category title','breadcrumb'));
+    $tags['Post_Category']['term_parent'] = array('name' => __('Category parent','breadcrumb'));
+    $tags['Post_Category']['term_ancestors'] = array('name' => __('Category ancestors','breadcrumb'));
+
+    $tags['Post_Region']['front_text'] = array('name' => __('Front text','breadcrumb'));
+    $tags['Post_Region']['home'] = array('name' => __('Home','breadcrumb'));
+    $tags['Post_Region']['term_title'] = array('name' => __('Category title','breadcrumb'));
+    $tags['Post_Region']['term_parent'] = array('name' => __('Category parent','breadcrumb'));
+    $tags['Post_Region']['term_ancestors'] = array('name' => __('Category ancestors','breadcrumb'));
+
+    $tags['Post_Title']['front_text'] = array('name' => __('Front text','breadcrumb'));
+    $tags['Post_Title']['home'] = array('name' => __('Home','breadcrumb'));
+    $tags['Post_Title']['term_title'] = array('name' => __('Category title','breadcrumb'));
+    $tags['Post_Title']['term_parent'] = array('name' => __('Category parent','breadcrumb'));
+    $tags['Post_Title']['term_ancestors'] = array('name' => __('Category ancestors','breadcrumb'));
+
 
     return $tags;
 }
